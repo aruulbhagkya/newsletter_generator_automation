@@ -1,0 +1,161 @@
+body {
+    background: #e1eaf5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    margin: auto auto 0;
+    box-shadow: 0 0 5px rgba(65,67,144,0.15);
+    padding: 50px;
+}
+
+h1 {
+    margin: 0 0 30px;
+    color: #475369;
+}
+
+ul {
+    padding: 0 0 30px;
+    border-bottom: 1px solid #d9dfe4;
+    margin-bottom: 30px;
+}
+
+ul:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    color: #475268;
+}
+
+.field-name {
+    font-weight: 500;
+    min-width: 95px;
+    display: inline-block;
+}
+
+.field-value {
+    font-size: .9em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.logoutLblPos {
+    position: fixed;
+    right: 80px;
+    top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.glyphicon.glyphicon-menu-hamburger {
+      font-size: 25px;
+  }
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.wrapper {
+    position:absolute;
+    top:5px;
+    right:180px;
+  }
+
+/*Logo*/
+img.logo{
+    max-height: 60px;
+    max-width: 60px;
+}
+
+/*Remove link underline*/
+a.nounderline{
+    text-decoration: none;
+}
+
+/*Add vertical space above divs*/
+.top-space-5 {
+    margin-top:5px;
+}
+
+.top-space {
+    margin-top:10px;
+}
+
+.top-space-15 {
+    margin-top:15px;
+}
+
+.top-space-20 {
+    margin-top:20px;
+}
+
+.top-space-25 {
+    margin-top:25px;
+}
+
+.top-space-30 {
+    margin-top:30px;
+}
+
+.top-space-40 {
+    margin-top:40px;
+}
+
+.top-space-50 {
+    margin-top:50px;
+}
+
+/*Vertically align images to the center*/
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/*Hamburger menu*/
+.hamburger-right {
+    float: right;
+}
+
+.qxf2_copyright {
+    font-family: "Abel", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.create-newsletter-label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    font-size: small;
+    vertical-align: top;
+  }
