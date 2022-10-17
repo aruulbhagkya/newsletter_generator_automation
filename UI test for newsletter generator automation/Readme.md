@@ -50,46 +50,11 @@ a) Get setup with your browser driver. If you don't know how to, please try:
 
 __If your setup goes well__, you should be to run a simple test with this command:
 
-1. Chrome: `python -m pytest -k example_form --browser Chrome`
+1. Chrome: `python -m pytest -k add_articles --browser Chrome`
 
-2. Firefox: `python -m pytest -k example_form --browser Firefox`
-
-__Optional steps__ for integrating with third-party tools:
-
-* [Integrate our Python test automation framework with Testrail](https://github.com/qxf2/qxf2-page-object-model/wiki/Integration-with-Testrail)
-* [Integrate our Python GUI/web automation framework with BrowserStack ](https://github.com/qxf2/qxf2-page-object-model/wiki/Integration-with-Cloud-Services#browserstack)
-* [Integrate our Python Selenium automation framework with Sauce Labs ](https://github.com/qxf2/qxf2-page-object-model/wiki/Integration-with-Cloud-Services#sauce-labs)
-* [Run Python integration tests on Jenkins ](https://github.com/qxf2/qxf2-page-object-model/wiki/Integration-with-CI-Tools#jenkins)
-* [Run Python integration tests on CircleCI ](https://github.com/qxf2/qxf2-page-object-model/wiki/Integration-with-CI-Tools#circleci)
-* [Post Python automation test results on Slack ](https://github.com/qxf2/qxf2-page-object-model/wiki/Utilities#slack-integration)
+2. Firefox: `python -m pytest -k add_articles --browser Firefox`
 
 
-__3. Setup for Mobile/Appium automation__
-
-
-a) [Download and Install appium desktop app](https://github.com/appium/appium-desktop/releases/latest)
-
-b) [Download and Install Android Studio and create an emulator](https://developer.android.com/studio/index.html)
-
-c) [Install Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-
-d) [Install the appium Python client library](https://pypi.python.org/pypi/Appium-Python-Client)
-pip install Appium-Python-Client
-
-__If your setup goes well__, you should be to run a simple mobile test with this command after starting the Appium and Android emulator:
-`python -m pytest -k mobile_bitcoin_price --mobile_os_version $Emulator_OS_Version --device_name $Emulator_Name`
-
-__Optional steps__ for more details on setting up appium and running tests on Android or iOS refer to below links:
-* [Get started with mobile automation: Appium & Python](https://qxf2.com/blog/appium-mobile-automation/)
-* [Get Set Test an iOS app using Appium and Python](https://qxf2.com/blog/get-set-test-an-ios-app-using-appium-and-python/)
-
-
-__4. Setup for API automation__
-
-There are no extra setup steps for API automation. To verify, run test_api_example now using command "pytest -k api -s"
-
-__Optional steps__ for more details on setting up API and running tests refer to below link:
-* [Easily Maintainable API Test Automation Framework](https://qxf2.com/blog/easily-maintainable-api-test-automation-framework/)
 
 -------------------
 Repository details
@@ -136,13 +101,11 @@ a)py.test [options]
 
 
 
-b)python tests/test_example_form.py (can also be used to run standalone test)
+b)python tests/test_add_articles.py (can also be used to run standalone test)
 
-c)python tests/test_example_form.py --browser Chrome (to run against chrome)
+c)python tests/test_add_articles.py --browser Chrome (to run against chrome)
 
-d)python tests/test_api_example.py (make sure to run sample cars-api available at qxf2/cars-api repository before api test run)
 
-e)python tests/test_mobile_bitcoin_price --mobile_os_version (android version) --device_name (simulator) --app_path (.apk location on local) --remote_flag Y (to run Mobile test case on Broswestack)remote_credentials.py
 NOTE: For running tests in Browserstack, need to update Username/Accesskey from Browserstack Account to remote_credentials.py under conf.
 
 --------
