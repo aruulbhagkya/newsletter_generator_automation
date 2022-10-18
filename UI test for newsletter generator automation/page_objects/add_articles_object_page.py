@@ -36,7 +36,7 @@ class Addarticles_Object_Page:
      add_button=self.click_element(self.add_articles)
      return add_button
     
-    #  set url
+    #  set the url 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
     def set_url(self,url):
@@ -46,7 +46,7 @@ class Addarticles_Object_Page:
             negative='Failed to set the url in the form',
             level='debug')
      
-    # set title
+    # set the title 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
     def set_title(self,title):
@@ -56,7 +56,7 @@ class Addarticles_Object_Page:
             negative='Failed to set the url in the form',
             level='debug')
 
-    # set description
+    # set the description 
     @Wrapit._exceptionHandler
     @Wrapit._screenshot
     def set_description(self,description):
