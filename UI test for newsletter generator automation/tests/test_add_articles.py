@@ -6,8 +6,6 @@ Our automated test will do the following:
 
 """
 import os,sys,time
-from turtle import title
-from typing_extensions import runtime
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from page_objects.PageFactory import PageFactory
 from utils.Option_Parser import Option_Parser
