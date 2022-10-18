@@ -1,5 +1,5 @@
-email  = "Enter the username"
-password = "Enter the password"
+email  ="Enter the username"
+password ="Enter the password"
 url="https://www.postman.com/product/tools/"
 title="postman api tool"
 description="tool which is used to get,post,put and delete request"
