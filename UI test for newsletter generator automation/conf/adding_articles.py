@@ -1,5 +1,5 @@
-email  = "aruul.bhagkya@qxf2.com"
-password = "AganSarwin@2021"
+email  = "Enter the username"
+password = "Enter the password"
 article1={'url':'https://www.python.org/downloads/',
 'title': 'postman api tool',
 'description':'tool which is used to get,post,put and delete request',
